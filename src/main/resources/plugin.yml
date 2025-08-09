@@ -1,0 +1,11 @@
+name: Art_plugin_1.0
+main: artPlugin.Main
+version: 1.0
+api-version: 1.21
+
+commands:
+  artPlugin.Main:
+    description: Main command for reload
+    usage: /<command> reload
+
+
