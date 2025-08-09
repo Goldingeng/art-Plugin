@@ -1,0 +1,23 @@
+name: "Плащ Теней"
+material: LEATHER_CHESTPLATE
+description:
+  - "§8Темный плащ, позволяющий"
+  - "§8раствориться в тенях"
+  - ""
+  - "§6Эффекты:"
+  - "§e• Невидимость при получении урона"
+  - "§e• Ночное зрение"
+trigger: ON_DAMAGE_TAKEN
+effects:
+  invisibility:
+    type: INVISIBILITY
+    level: 1
+    chance: 30
+    period: on_damage
+    duration: 60
+  night_vision:
+    type: NIGHT_VISION
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1

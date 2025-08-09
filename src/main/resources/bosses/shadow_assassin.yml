@@ -1,0 +1,33 @@
+name: "Теневой Убийца"
+entity_type: WITHER_SKELETON
+health: 300
+damage: 15
+speed: 1.5
+spawn:
+  world: world
+  x: 0
+  y: 64
+  z: 0
+  radius: 20
+effects:
+  invisibility:
+    type: INVISIBILITY
+    level: 1
+    chance: 50
+    period: combat
+    duration: 40
+  speed:
+    type: SPEED
+    level: 2
+    chance: 100
+    period: permanent
+    duration: -1
+  strength:
+    type: STRENGTH
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1
+drop_artifacts:
+  - shadow_cloak
+  - speed_boots

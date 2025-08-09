@@ -1,0 +1,33 @@
+name: "Огненный Властелин"
+entity_type: BLAZE
+health: 500
+damage: 20
+speed: 1.2
+spawn:
+  world: world_nether
+  x: 100
+  y: 65
+  z: -200
+  radius: 50
+effects:
+  fire_resistance:
+    type: FIRE_RESISTANCE
+    level: 3
+    chance: 100
+    period: permanent
+    duration: -1
+  strength:
+    type: STRENGTH
+    level: 2
+    chance: 100
+    period: permanent
+    duration: -1
+  speed:
+    type: SPEED
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1
+drop_artifacts:
+  - fire_sword
+  - healing_amulet

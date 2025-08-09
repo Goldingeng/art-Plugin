@@ -1,0 +1,23 @@
+name: "Амулет Жизни"
+material: GOLDEN_APPLE
+description:
+  - "§aМистический амулет, способный"
+  - "§aисцелить раны своего владельца"
+  - ""
+  - "§6Эффекты:"
+  - "§e• Регенерация I"
+  - "§e• Увеличение здоровья"
+trigger: ALWAYS
+effects:
+  regeneration:
+    type: REGENERATION
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1
+  health_boost:
+    type: HEALTH_BOOST
+    level: 2
+    chance: 100
+    period: permanent
+    duration: -1

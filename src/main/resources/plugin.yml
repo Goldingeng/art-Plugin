@@ -1,11 +1,71 @@
-name: Art_plugin_1.0
+# plugin.yml
+name: ArtifactPlugin
 main: artPlugin.Main
 version: 1.0
 api-version: 1.21
+author: Golding
+description: Advanced artifact and boss system with effects
 
 commands:
-  artPlugin.Main:
-    description: Main command for reload
-    usage: /<command> reload
+  artifact:
+    description: Main artifact plugin commands
+    usage: /<command> [reload|give|list|spawn|listbosses]
+    permission: artifact.use
+    aliases: [art, artifacts]
+
+permissions:
+  artifact.use:
+    description: Basic artifact plugin usage
+    default: true
+  artifact.admin:
+    description: Admin commands for artifact plugin
+    default: op
+  artifact.give:
+    description: Give artifacts to players
+    default: op
 
 
+# Global settings
+settings:
+  debug: false
+  auto_save: true
+  save_interval: 300 # seconds
+
+# Artifact spawn chances in different locations
+spawn_chances:
+  nether_fortress: 15
+  bastion_remnant: 20
+  end_city: 25
+  end_ship: 30
+  village_chest: 5
+  temple_chest: 15
+  abandoned_mineshaft: 8
+  stronghold: 20
+  ocean_ruin: 10
+  shipwreck: 12
+  raid_reward: 25
+
+# Boss spawn settings
+boss_settings:
+  respawn_time: 3600 # seconds (1 hour)
+  announce_spawn: true
+  announce_death: true
+  drop_chance_multiplier: 1.0
+
+# Effect settings
+effects:
+  max_stack_level: 5
+  permanent_duration: -1
+  default_duration: 200
+
+# Messages (can be customized)
+messages:
+  artifact_received: "§aВы получили артефакт: %artifact%"
+  artifact_activated: "§eАктивирован артефакт: %artifact%"
+  artifact_deactivated: "§7Деактивирован артефакт: %artifact%"
+  boss_spawned: "§c%boss% появился в мире!"
+  boss_defeated: "§a%boss% повержен!"
+  no_permission: "§cУ вас нет разрешения на это действие!"
+  player_not_found: "§cИгрок не найден!"
+  artifact_not_found: "§cАртефакт не найден!"
+  boss_not_found: "§cБосс не найден!"

@@ -1,0 +1,24 @@
+name: "Сапоги Ветра"
+material: DIAMOND_BOOTS
+description:
+  - "§7Легендарные сапоги, дарующие"
+  - "§7невероятную скорость своему"
+  - "§7владельцу"
+  - ""
+  - "§6Эффекты:"
+  - "§e• Скорость II"
+  - "§e• Прыгучесть I"
+trigger: ON_EQUIP
+effects:
+  speed:
+    type: SPEED
+    level: 2
+    chance: 100
+    period: permanent
+    duration: -1
+  jump:
+    type: JUMP
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1

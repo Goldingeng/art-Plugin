@@ -1,0 +1,23 @@
+name: "Клинок Пламени"
+material: NETHERITE_SWORD
+description:
+  - "§cДревний меч, пропитанный"
+  - "§cсилой огненных духов"
+  - ""
+  - "§6Эффекты:"
+  - "§e• Сила I при атаке"
+  - "§e• Огнестойкость"
+trigger: ON_ATTACK
+effects:
+  strength:
+    type: STRENGTH
+    level: 1
+    chance: 75
+    period: on_attack
+    duration: 100
+  fire_resistance:
+    type: FIRE_RESISTANCE
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1

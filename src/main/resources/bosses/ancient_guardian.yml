@@ -1,0 +1,34 @@
+name: "Древний Страж"
+entity_type: IRON_GOLEM
+health: 800
+damage: 25
+speed: 0.8
+spawn:
+  world: world
+  x: 500
+  y: 64
+  z: 500
+  radius: 30
+effects:
+  resistance:
+    type: DAMAGE_RESISTANCE
+    level: 2
+    chance: 100
+    period: permanent
+    duration: -1
+  slow_falling:
+    type: SLOW_FALLING
+    level: 1
+    chance: 100
+    period: permanent
+    duration: -1
+  health_boost:
+    type: HEALTH_BOOST
+    level: 5
+    chance: 100
+    period: permanent
+    duration: -1
+drop_artifacts:
+  - healing_amulet
+  - fire_sword
+  - speed_boots
